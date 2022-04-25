@@ -10,7 +10,7 @@
 #define CON_W	51		// width used in console
 #define MAX_LIM 999		// the maximum limit that the user can input
 #define ROW_AMT 12		// numbers displayed per row
-#define TITLE	"ANSIEVE\0" // title displayed at top of output
+#define TITLE	"ANSIEVE" // title displayed at top of output
 
 // Text attribute ANSI escape sequences
 #define COL_BORDER	"\x1b[0;34m"	// border: blue
