@@ -15,7 +15,7 @@
 // Text attribute ANSI escape sequences
 #define COL_BORDER	"\x1b[0;34m"	// border: blue
 #define COL_BLDBRDR "\x1b[1;34m"	// bold border
-#define COL_C_PRIME	"\x1b[1;37m"	// current print: bold, white
+#define COL_C_PRIME	"\x1b[1;37m"	// current prime: bold, white
 #define COL_C_MULT	"\x1b[0;30;43m"	// current multiple: black, yellow highlight
 #define COL_PRIME	"\x1b[0;32m"	// confirmed prime: green
 #define COL_COMP	"\x1b[0;31m"	// confirmed composite: red
