@@ -44,8 +44,6 @@ void drawborder(int len) {
 	// 3 digits per number, space separated
 	int w = 4 * ROW_AMT + 1;
 	
-	// clear screen
-	// printf("\x1b[2J");
 	// move cursor up by 1
 	printf("\x1b[1A");
 	// set text colour
@@ -77,8 +75,6 @@ void drawborder(int len) {
 	for (int y = 0; y < h; y++)
 	{
 		printf(" \u2551");
-		// for (int x = 0; x < w; x++)
-		// 	printf(" ");
 		printf("\x1b[%dC", w);
 		printf("\u2551\n");
 	}
@@ -142,7 +138,7 @@ void drawlist(bool* list, int p, int m, int lim)
 		for (int x = 0; x < ROW_AMT; x++) {
 			int index = y * ROW_AMT + x;
 			
-			// don't do too many numbers
+			// don't do too many numbers on last row
 			if (index > lim)
 				break;
 
