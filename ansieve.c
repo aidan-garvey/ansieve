@@ -256,6 +256,8 @@ void runsieve(int lim)
 	drawlist(isprime, -1, -1, lim);
 	// move cursor below list so output is not overwritten by terminal
 	printf("\x1b[%dB\n", (lim)/ROW_AMT + 1);
+	
+	free(isprime);
 }
 
 // prompt user for limit, ensure 3-digit value is given,
